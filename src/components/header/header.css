@@ -1,0 +1,106 @@
+header {
+    width: 100%; /* Full-width header */
+    height: 50px;
+    line-height: 0px;
+}
+.sticky_header{
+    width: 100%;
+    line-height: 70px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 3px 3px 8px -3px #ddd;
+    background: var(--card-bg-02);
+}
+
+.nav_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and icons */
+     /* Adds padding for better spacing */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+
+.logo h1 {
+    font-size: 1.1rem;
+    font-weight: 600px;
+    color: var(--primary-color);
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: left;
+    column-gap: 2.7rem;
+    flex: 1; /* Allows it to expand */
+}
+
+.nav_item a {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav_icons {
+    display: flex;
+    align-items: center; /* Aligns icons vertically */
+    justify-content: flex-end; /* Pushes icons to the right */
+    column-gap: 1.5rem; /* Adds space between icons */
+    margin-left: auto; /* Ensures icons are pushed to the far right */
+}
+
+.nav_icons span i {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.nav_icons span img{
+    width: 30px;
+    height: 30px;
+}
+.nav_icon , .fav_icon{
+    position: relative;
+}
+.nav_active{
+    font-weight: 800;
+}
+
+.cart_icon,
+.fav_icon {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 0; /* Adjust position to align correctly */
+    right: -10px; /* Aligns on the icon */
+    width: 15px;
+    height: 15px;
+    content: "";
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 50%; /* Circular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 400;
+    z-index: 100;
+}
+.nav_icons span{
+    color: black;
+    
+}

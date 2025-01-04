@@ -1,0 +1,25 @@
+.auth_form {
+    background: var(--primary-color);
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.auth_btn {
+    font-weight: 600;
+    color: var(--primary-color);
+    background: #fff;
+
+}
+.auth_form p{
+    margin-top: 30px;
+}
+.auth_form p a{
+    color:var(--small-text-color);
+}
+.auth_form input[type='file']{
+    color: #fff;
+    cursor: pointer;
+
+
+}
+
