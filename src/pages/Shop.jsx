@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { usestate } from 'react';
 import CommonSection from '../components/ui/CommonSection';
 import Helmet from '../components/helmet/Helmet';
 import { Container, Row, Col } from 'reactstrap';
@@ -9,7 +9,7 @@ import ProductsList from "../components/ui/ProductList"
 
 
 const Shop = () => {
-  const [productsData, setProductsData] = useState(products);
+  const [productsData, setProductsData] = usestate(products);
   const handleFilter = (e) => {
     const filterValue = e.target.value;
     if (filterValue === "all") {

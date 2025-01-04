@@ -1,4 +1,4 @@
-import React, { useState , useRef,useEffect} from 'react'
+import React, { usestate , useRef,useEffect} from 'react'
 import products from '../assets/data/products';
 import { Container, Row, Col } from 'reactstrap';
 import { useParams } from 'react-router-dom';
@@ -17,8 +17,8 @@ import { toast } from 'react-toastify';
 const ProductDetails = () => {
   const reviewUser = useRef("");
   const reviewMsg = useRef("");
-  const[rating ,setRating] = useState(null);
-  const [tab, setTab] = useState("desc");
+  const[rating ,setRating] = usestate(null);
+  const [tab, setTab] = usestate("desc");
   const { id } = useParams();
   const product = products.find(item => item.id === id);
   const { imgUrl, productName, price, avgRating, reviews, shortDesc, category, description } = product;

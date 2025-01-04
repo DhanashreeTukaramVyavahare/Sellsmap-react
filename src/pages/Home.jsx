@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { usestate, useEffect } from "react";
 import "../styles/home.css";
 import Helmet from "../components/helmet/Helmet";
 import { Container, Row, Col } from "reactstrap";
@@ -12,11 +12,11 @@ import counterImg from "../assets/images/counter-timer-img.png";
 import Clock from "../components/ui/Clock";
 
 const Home = () => {
-  const [trendingProducts, setTrendingProducts] = useState([]);
-  const [bestSellingProducts, setBestSellingProducts] = useState([]);
-  const [mobileProducts , setMobileProducts] = useState([]);
-  const [wirelessProducts , setWirelessProducts] = useState([]);
-  const [popularProducts , setPopularProducts] =useState([]);
+  const [trendingProducts, setTrendingProducts] = usestate([]);
+  const [bestSellingProducts, setBestSellingProducts] = usestate([]);
+  const [mobileProducts , setMobileProducts] = usestate([]);
+  const [wirelessProducts , setWirelessProducts] = usestate([]);
+  const [popularProducts , setPopularProducts] =usestate([]);
   const year = new Date().getFullYear();
   useEffect(() => {
     const filteredProducts = products.filter(

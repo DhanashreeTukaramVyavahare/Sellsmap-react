@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { usestate } from 'react';
 
 import Helmet from '../components/helmet/Helmet';
 import '../styles/login.css';
@@ -15,11 +15,11 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Signup = () => {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [file, setFile] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [username, setUsername] = usestate('');
+  const [email, setEmail] = usestate('');
+  const [password, setPassword] = usestate('');
+  const [file, setFile] = usestate(null);
+  const [loading, setLoading] = usestate(false);
   const navigate = useNavigate();
   
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { usestate } from 'react';
 import '../styles/login.css';
 import Helmet from '../components/helmet/Helmet';
 import { Container, Row, Col, Form, FormGroup, Input } from 'reactstrap';
@@ -9,9 +9,9 @@ import { toast } from "react-toastify";
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-  const [loading, setLoading] = useState(false);
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [loading, setLoading] = usestate(false);
+  const [email, setEmail] = usestate("");
+  const [password, setPassword] = usestate("");
   const navigate = useNavigate();
 
   const signIn = async (e) => {

@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import {useState, useEffect} from 'react';
+import React, { usestate } from 'react';
+import {usestate, useEffect} from 'react';
 
 const Clock = () => {
-  const [days, setDays] = useState();
-    const [hours, setHours] = useState();
-    const [minutes, setMinutes] = useState();
-    const [seconds, setSeconds] = useState();
+  const [days, setDays] = usestate();
+    const [hours, setHours] = usestate();
+    const [minutes, setMinutes] = usestate();
+    const [seconds, setSeconds] = usestate();
     let interval;
     const countDown = ()=>{
       const destination = new Date('Nov 25, 2024').getTime();
