@@ -1,9 +1,9 @@
-import React,{usestate}from 'react';
+import React,{useState}from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../firebase.config';
 
 const useAuth = () => {
-    const [currentUser,setCurrentUser]=usestate({});
+    const [currentUser,setCurrentUser]=useState({});
     useEffect(()=>{
         onAuthStateChanged(auth,(user)=>{
             if(user){

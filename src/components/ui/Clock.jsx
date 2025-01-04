@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {usestate, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 
 const Clock = () => {
   const [days, setDays] = useState();
